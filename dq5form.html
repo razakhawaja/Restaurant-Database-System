@@ -1,0 +1,73 @@
+
+<html>
+
+  <style>
+  input[type=text] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: white;
+  }
+  input[type=number] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+      font-weight: bold;
+      color: black;
+  }
+  .container {
+    width: 500px;
+    clear: both;
+  }
+
+  .container input {
+    width: 100%;
+    clear: both;
+  }
+
+  .sbt {
+    width: 20%;
+  }
+
+  input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+
+  </style>
+
+<body >
+<div class = "container">
+<form action="/dq5" method="POST">
+   <fieldset style="background-color:#E7E7E7">
+   <p style="color:black; font-weight: bold;"> 
+    Customer ID: <input id="id" type='text' name='cname' maxlength=10 placeholder="Enter customer id." required> 
+   </p>
+   <p style="color:black; font-weight: bold;">
+    Item ID: <input id="id" type='text' name='iname' maxlength=10 placeholder="Enter item id." required> 
+   </p>
+  <p>
+    <script type="text/javascript" src="db.js"></script>
+    <div class = "sbt">
+      <input type = 'submit' name = "Submit" value = "submit" >
+    </div>
+  </p>
+  </fieldset>
+
+
+</form>
+</div>
+</body>
+
+</html>

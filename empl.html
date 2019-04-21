@@ -1,0 +1,82 @@
+
+<html>
+
+  <style>
+  input[type=text] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+  input[type=number] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+
+  .container {
+    width: 500px;
+    clear: both;
+  }
+
+  .container input {
+    width: 100%;
+    clear: both;
+  }
+
+  .sbt {
+    width: 20%;
+  }
+
+  input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:2px;
+    cursor:pointer;
+    border-radius: 5px; 
+}
+
+  </style>
+
+<body >
+<div class = "container">
+<form action="/esub" method="POST">
+   <h1> Employee Form: </h1>
+   <fieldset>
+   <p> 
+    ID: <input id="id" type='number' name='ID' maxlength=10 required="bc id daal">
+   </p>
+   <p>
+    Name: <input id="name" type='text' name='Name' maxlength=30 />
+   </p>
+   <p>
+    Contact: <input id="cont"  type='number' name='Contact' maxlength=20 required>
+   </p>
+   <p>
+    Address: <input id="addr" type='text' name='Addr' maxlength=50>
+   </p>
+   <p>
+            Job: <select id="job" type='text' name='Job' maxlength=10>
+              <option value= "Waiter"> Waiter </option>
+              <option value= "Chef"> Chef </option>
+              <option value= "Manager"> Manager </option>
+  </p>
+
+  <p>
+    <div class = "sbt">
+      <input type = 'submit' name = "Submit" value = "submit" >
+    </div>
+  </p>
+</fieldset>
+
+
+</form>
+</div>
+</body>
+
+</html>

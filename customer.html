@@ -1,0 +1,87 @@
+
+<html>
+
+  <style>
+  input[type=text] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+  input[type=number] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+
+  .container {
+    width: 500px;
+    clear: both;
+  }
+
+  .container input {
+    width: 100%;
+    clear: both;
+    margin: auto;
+  }
+
+  .sbt {
+    width: 20%;
+  }
+
+  input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:2px;
+    cursor:pointer;
+    border-radius: 5px; 
+}
+
+  </style>
+
+<body >
+<div class = "container">
+<form action="/csub" method="POST">
+   <h1> Customers Form: </h1>
+   <fieldset style="background-color: #EBEBEB">
+   <p> 
+
+    ID: <input id="id" type='number' name='ID' maxlength=10 placeholder="Enter ID..." required> 
+   </p>
+   <p>
+    Name: <input id="name" type='text' name='Name' maxlength=30 placeholder="Enter Name" >
+   </p>
+   <p>
+    Contact1: <input id="cont1"  type='number' name='Contact1' maxlength=10 placeholder="Enter contact..." required>
+   </p>
+   <p>
+    Contact2 (Enter 0 if N/A): <input id="cont2" type='number' name='Contact2' maxlength=10 placeholder="Enter contact..." required>
+   </p>
+   <p>
+            Membership: <select id="mem" type='text' name='Membership' maxlength=10 required>
+              <option value= "Gold"> Gold </option>
+              <option value= "Silver"> Silver </option>
+              <option value= "Bronze"> Bronze </option>
+              <option value= "None"> None </option>
+
+  </p>
+
+  <p>
+    <script type="text/javascript" src="db.js"></script>
+    <div class = "sbt">
+      <input type = 'submit' name = "Submit" value = "submit" >
+    </div>
+  </p>
+</fieldset>
+
+
+</form>
+</div>
+</body>
+
+</html>

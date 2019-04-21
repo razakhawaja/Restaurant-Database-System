@@ -1,0 +1,87 @@
+
+<html>
+
+  <style>
+  input[type=text] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+  input[type=number] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+
+  .container {
+    width: 500px;
+    clear: both;
+  }
+
+  .container input {
+    width: 100%;
+    clear: both;
+    margin: auto;
+  }
+
+  .sbt {
+    width: 20%;
+  }
+
+  input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:2px;
+    cursor:pointer;
+    border-radius: 5px; 
+}
+
+  </style>
+
+<body >
+<div class = "container">
+<form action="/cdel" method="POST">
+   <h1> Delete from Customers: </h1>
+   <h3> WHERE: </h3>
+   <p> 
+    ID: <input id="id" type='number' name='customer_id' maxlength=10 placeholder="Enter ID"> 
+   </p>
+   <p>
+    Name: <input id="name" type='text' name='name' maxlength=30 placeholder="Enter Name" >
+   </p>
+   <p>
+    Contact1: <input id="cont1"  type='number' name='contact1' maxlength=10 placeholder="Enter contact...">
+   </p>
+   <p>
+    Contact2: <input id="cont2" type='number' name='contact2' maxlength=10 placeholder="Enter contact...">
+   </p>
+   <p>
+            Membership: <select id="mem" type='text' name='membership' maxlength=10 >
+              <option disabled selected value = "null"> </option>
+              <option value= "Gold"> Gold </option>
+              <option value= "Silver"> Silver </option>
+              <option value= "Bronze"> Bronze </option>
+              <option value= "None"> None </option>
+
+  </p>
+
+  <p>
+    <script type="text/javascript" src="db.js"></script>
+    <div class = "sbt">
+      <input type = 'submit' name = "Submit" value = "submit" >
+    </div>
+  </p>
+
+
+
+</form>
+</div>
+</body>
+
+</html>

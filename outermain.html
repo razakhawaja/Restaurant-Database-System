@@ -1,0 +1,73 @@
+<html>
+  
+  <style>
+  .container {
+    width: 500px;
+    padding-bottom: 10px
+    clear: both;
+    background-color: #E7E7E7;
+    margin: auto
+  }
+
+  .heading {
+    color: red;
+    text-align: center;
+    text-shadow: 2px 1px black;
+  }
+  a:link {
+      color: #560047; 
+      background-color: transparent; 
+      text-decoration: none;
+      font-size: 20px;
+      text-align: center;
+  }
+
+  a:visited {
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+
+  a:active {
+      color: blue;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+
+  </style>
+
+<h1 class = "heading"> Restaurant Management Database System </h1>
+
+<body>
+
+
+<div class = "container">
+  <fieldset>
+  <h3> Select Operation:</h3>
+  <a href="/insert" method="GET">Insert Data</a>
+  <br>
+  <a href="/delete" method="GET">Delete Data</a>
+  <br>
+  <a href="/update" method="GET">Update Data</a>
+  <br>
+  </fieldset>
+
+
+  <fieldset>
+  	<a href="/stat" method="GET">Static Queries</a>
+	<br>
+  	<a href="/dyn" method="GET">Dynamic Queries</a>
+  	<br>
+
+  </fieldset>
+</div>
+
+
+</body>
+</html>

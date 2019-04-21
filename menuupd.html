@@ -1,0 +1,89 @@
+
+<html>
+
+  <style>
+  input[type=text] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+  input[type=number] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+
+  .container {
+    width: 500px;
+    clear: both;
+  }
+
+  .container input {
+    width: 100%;
+    clear: both;
+  }
+
+  .sbt {
+    width: 20%;
+  }
+
+  input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+
+  </style>
+
+<body >
+<div class = "container">
+<form action="/menuupd" method="POST">
+   <h1> Update Menu: </h1>
+   <fieldset>
+   <h3> SET: </h3>
+   <p> 
+    Item ID: <input id="id" type='number' name='item_id' maxlength=10 placeholder="Enter ID..."> 
+   </p>
+   <p>
+    Item Name: <input id="name" type='text' name='item_name' maxlength=30 placeholder="Enter Name">
+   </p>
+   <p>
+    Price <input id="cont1"  type='number' name='price' maxlength=10 placeholder="Enter contact...">
+   </p>
+   
+   <h3> WHERE: </h3>
+    <p> 
+    Item ID: <input id="id" type='number' name='_item_id' maxlength=10 placeholder="Enter ID..."> 
+   </p>
+   <p>
+    Item Name: <input id="name" type='text' name='_item_name' maxlength=30 placeholder="Enter Name">
+   </p>
+   <p>
+    Price <input id="cont1"  type='number' name='_price' maxlength=10 placeholder="Enter contact...">
+   </p>
+
+
+  <p>
+    <script type="text/javascript" src="db.js"></script>
+    <div class = "sbt">
+      <input type = 'submit' name = "Submit" value = "submit" >
+    </div>
+  </p>
+
+  </fieldset>
+
+</form>
+</div>
+</body>
+
+</html>

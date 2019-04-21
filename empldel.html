@@ -1,0 +1,85 @@
+
+<html>
+
+  <style>
+  input[type=text] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+  input[type=number] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+      background-color: white;
+  }
+
+  .container {
+    width: 500px;
+    clear: both;
+  }
+
+  .container input {
+    width: 100%;
+    clear: both;
+  }
+
+  .sbt {
+    width: 20%;
+  }
+
+  input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:2px;
+    cursor:pointer;
+    border-radius: 5px; 
+}
+
+  </style>
+
+<body >
+<div class = "container">
+<form action="/edel" method="POST">
+   <h1> Delete from Employee: </h1>
+   <h3> WHERE: </h3>
+   <fieldset>
+   <p> 
+    ID: <input id="id" type='number' name='employee_id' maxlength=10>
+   </p>
+   <p>
+    Name: <input id="name" type='text' name='name' maxlength=30 />
+   </p>
+   <p>
+    Contact: <input id="cont"  type='number' name='contact' maxlength=20>
+   </p>
+   <p>
+    Address: <input id="addr" type='text' name='address' maxlength=50>
+   </p>
+   <p>
+            Job: <select id="job" type='text' name='job' maxlength=10>
+              <option disabled selected value = "null"> </option>
+              <option value= "Waiter"> Waiter </option>
+              <option value= "Chef"> Chef </option>
+              <option value= "Manager"> Manager </option>
+            </select>
+  </p>
+
+  <p>
+    <div class = "sbt">
+      <input type = 'submit' name = "Submit" value = "submit" >
+    </div>
+  </p>
+</fieldset>
+
+
+</form>
+</div>
+</body>
+
+</html>

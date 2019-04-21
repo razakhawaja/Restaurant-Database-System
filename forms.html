@@ -1,0 +1,58 @@
+<html>
+
+	<style>
+	input[type=text] {
+	    width: 50%;
+	    box-sizing: border-box;
+	    border: 3px solid #ccc;
+	    border-radius: 3px;
+	    font-size: 16px;
+	    background-color: white;
+	}
+	.container {
+	  width: 500px;
+	  clear: both;
+	}
+
+	.container input {
+	  width: 100%;
+	  clear: both;
+	}
+	.drpdown{
+		padding-top: 100px;
+		
+	}
+
+	</style>
+
+<body >
+	<div class = "container">
+		<form action="/empform" method="POST">
+		   <h1> Employee Form: </h1>
+		   <p> 
+		   	ID: <input id="id" type='number' name='ID' maxlength=10 />
+		   </p>
+		   <p>
+		   	Name: <input id="name" type='text' name='Name' maxlength=30 />
+		   </p>
+		   <p>
+		   	Contact: <input id="cont"  type='number' name='Contact' maxlength=20>
+		   </p>
+		   <p>
+		   	Address: <input id="addr" type='text' name='Addr' maxlength=50>
+		   </p>
+			<p>
+				   	Job: <select id="job" type='text' name='Job' maxlength=10>
+				   		<option value= "Waiter"> Waiter </option>
+				   		<option value= "Chef"> Chef </option>
+				   		<option value= "Manager"> Manager </option>
+			</p>
+			<p>
+					<input type = 'submit' name = 'Submit' value="submit">
+			</p>
+
+		</form>
+	</div>
+</body>
+
+</html>
